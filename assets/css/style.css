@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/********************************************* General */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.main-section {
+    margin-bottom: 5px;
+}
+
+.bg-color-blue {
+    background-color: #444a9f;
+}
+
+.bg-color-purple {
+    background-color: #9c85db;
+}
+
+.heading-font {
+    font-family: Playfair Display;
+    font-weight: 800;
+}
+
+.standard-font {
+    font-family: Work Sans;
+}
+
+
+/********************************************* Header */
+
+.logo-img {
+    margin-bottom: 8px;
+    -o-transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+    /* Adjust scale value as needed */
+}
+
+.bg-img {
+    border-top: 3px solid white;
+    background: url('../images/bg-img-v1.jpg');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 47vh;
+    margin: 0;
+}
+
+.bg-img-finance {
+    border-top: 3px solid white;
+    background: url('../images/bg-img-finance-v2.jpg');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 47vh;
+    margin: 0;
+}
+
+.bg-img-refund-form {
+    border-top: 3px solid white;
+    background: url('../images/bg-img-refund-form-v2.jpg');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 47vh;
+    margin: 0;
+}
+
+.bg-img-refund-form::before,
+.bg-img-finance::before,
+.bg-img::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, #ffffff00 20%, #444a9f 100%);
+}
+
+
+
+
+.welcome-section {
+    padding: 0;
+}
+
+.welcome-name {
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    font-size: 75px;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 1);
+}
+
+.search-textbox {
+    margin: 20px 0 20px 0;
+    padding: 10px 150px;
+    -o-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    font-family: Work Sans;
+    font-size: 20px;
+}
+
+/**************************** Div Styling */
+
+.company-updates {
+    background-color: #9c85db;
+    height: 200px;
+    padding: 65px;
+    -o-border-radius: 50px 0 50px 0;
+    -webkit-border-radius: 50px 0 50px 0;
+    -moz-border-radius: 50px 0 50px 0;
+    -ms-border-radius: 50px 0 50px 0;
+    border-radius: 50px 0 50px 0;
+    margin-top: 15px;
+}
+
+.travel,
+.client,
+.finance,
+.personal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: #9c85db;
+    -o-border-radius: 50px 0 50px 0;
+    -webkit-border-radius: 50px 0 50px 0;
+    -moz-border-radius: 50px 0 50px 0;
+    -ms-border-radius: 50px 0 50px 0;
+    border-radius: 50px 0 50px 0;
+    margin-top: 15px;
+    -o-transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+}
+
+.travel-link,
+.client-link,
+.finance-link,
+.personal-link {
+    text-decoration: none;
+}
+
+.travel:hover,
+.client:hover,
+.finance:hover,
+.personal:hover {
+    -o-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.quick-link-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 627px;
+    width: 100%;
+    background-color: white;
+    border: 5px solid #9c85db;
+    border-radius: 50px 0 50px 0;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.quick-links-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: #9c85db;
+    -o-border-radius: 40px 0 40px;
+    -webkit-border-radius: 40px 0 40px;
+    -moz-border-radius: 40px 0 40px;
+    -ms-border-radius: 40px 0 40px;
+    border-radius: 40px 0 40px;
+}
+
+.quick-links-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.social-posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    border: 5px solid #9c85db;
+    -o-border-radius: 50px 0 50px 0;
+    -webkit-border-radius: 50px 0 50px 0;
+    -moz-border-radius: 50px 0 50px 0;
+    -ms-border-radius: 50px 0 50px 0;
+    border-radius: 50px 0 50px 0;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.shoutout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 80%;
+    background-color: white;
+    border: 5px solid #9c85db;
+    -o-border-radius: 50px 0 50px 0;
+    -webkit-border-radius: 50px 0 50px 0;
+    -moz-border-radius: 50px 0 50px 0;
+    -ms-border-radius: 50px 0 50px 0;
+    border-radius: 50px 0 50px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 65px;
+
+}
+
+.cal-meet-wig,
+.time-tastic,
+.comp-directory,
+.external-links {
+    display: flex;
+    height: 270px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 5px solid #9c85db;
+    -o-border-radius: 50px 0 50px 0;
+    -webkit-border-radius: 50px 0 50px 0;
+    -moz-border-radius: 50px 0 50px 0;
+    -ms-border-radius: 50px 0 50px 0;
+    border-radius: 50px 0 50px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bottom-border {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 5px solid #9c85db;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**************************** Fonts */
+
+.company-updates h2,
+.travel h2,
+.client h2,
+.finance h2,
+.personal h2,
+.quick-links-heading h2 {
+    color: white;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+    font-size: 35px;
+
+}
+
+.quick-links-heading h3 {
+    margin: 0;
+    width: auto;
+    text-align: center;
+}
+
+.quick-links-content p {
+    color: #9c85db;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.social-posts h3,
+.cal-meet-wig h3,
+.time-tastic h3,
+.comp-directory h3,
+.external-links h3 {
+    color: #9c85db;
+    font-size: 30px;
+}
+
+.shoutout h3 {
+    color: #9c85db;
+}
+
+.cal-meet-wig h3,
+.time-tastic h3,
+.comp-directory h3,
+.external-links h3 {
+    text-align: center;
+}
+
+.external-links p {
+    font-family: Work Sans;
+    font-size: 17px;
+}
+
+
+/**************************** Company Updates */
+
+.carousel-item {
+    justify-content: center;
+    text-align: center;
+}
+
+.slide {
+    height: 150px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    padding-bottom: 90px;
+}
+
+/**************************** Travel & Finance */
+
+.finance-section,
+.travel-section {
+    margin-bottom: 54px;
+}
+
+.fin-refund-btn,
+.travel-section-btn {
+    height: 300px;
+    width: 300px;
+    border: 3px solid #fff;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    font-size: 100px;
+    color: #fff;
+    justify-content: center;
+    text-shadow: 2px 2px 4px #000000;
+    -o-transition: font-size 0.5s ease, color 0.5s ease;
+    -webkit-transition: font-size 0.5s ease, color 0.5s ease;
+    -moz-transition: font-size 0.5s ease, color 0.5s ease;
+    -ms-transition: font-size 0.5s ease, color 0.5s ease;
+    transition: font-size 0.5s ease, color 0.5s ease;
+}
+
+.fin-refund-btn:hover,
+.travel-section-btn:hover {
+    color: #444a9f;
+    border: #fff;
+    background-color: #fff;
+    font-size: 150px;
+}
+
+.fin-refund-btn h4,
+.travel-section-btn h4 {
+    padding-top: 20px;
+    font-family: Playfair Display;
+    font-size: 30px;
+}
+
+.fin-refund-btn div,
+.travel-section-btn div {
+    padding-top: 65px;
+}
+
+/**************************** Client */
+
+
+
+
+/**************************** Finance */
+
+.refund-form {
+    min-height: 100vh;
+    padding-bottom: 10rem;
+}
+
+#refundForm label {
+    font-family: Work Sans;
+    color: #000000;
+}
+
+
+
+
+/**************************** Personal */
+
+
+
+
+/**************************** Socials */
+
+
+
+
+/**************************** Shout */
+
+.shoutout-section {
+    margin-left: .4px;
+}
+
+
+/**************************** Calendar/Meetings */
+
+
+
+
+/**************************** Timetastic */
+
+
+
+
+/**************************** Company Directory */
+
+
+
+
+/**************************** External links */
+
+
+
+.external-links p a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #9c85db;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.external-links p a:hover {
+    font-weight: 600;
+    text-decoration: none;
+    color: #007F8C;
+    font-size: 20px;
+}
+
+.external-links h3 {
+    margin-bottom: 20px;
+}
+
+
+/**************************** Scrolling Travel News */
+
+.scrolling-updates {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    background: #444a9f;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+}
+
+.scrolling-content {
+    display: inline-flex;
+    align-items: flex-start;
+    white-space: nowrap;
+    -webkit-animation: scroll-left 40s linear infinite;
+    animation: scroll-left 40s linear infinite;
+}
+
+.scrolling-content span {
+    margin-right: 50px;
+}
+
+.scrolling-content a {
+    color: #fff;
+}
+
+.scrolling-content a:hover {
+    color: #ccc;
+}
+
+.scrolling-news {
+    font-size: 25px;
+    padding-top: 7px;
+}
+
+.news-border {
+    border-left: 3px solid white;
+    padding-left: 50px;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.main {
+    padding-bottom: 3rem;
+}
