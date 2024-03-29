@@ -391,7 +391,7 @@ function refundApplication() {
                     otherProviderInput.innerHTML = `
                         <div class="pt-3">
                             <label class="form-group" for="otherProviderName">Please enter the provider's name:</label>
-                            <input type="text" id="otherProviderName" class="form-control" placeholder="Provider's name" required>
+                            <input type="text" id="otherProviderName" class="form-control" placeholder="After entering the suppliers name, press 'Tab' to continue" required>
                         </div>
                     `;
                     supplierCarAndTaxiField.appendChild(otherProviderInput);
@@ -449,7 +449,7 @@ function refundApplication() {
             ancillarySupplierField.innerHTML = `
             <div class="pt-3">
                 <label class="form-group" for="ancillarySupplier">Select the supplier:</label>
-                <input type="text" id="ancillarySupplier" class="form-control" placeholder="Provider's name" required>
+                <input type="text" id="ancillarySupplier" class="form-control" placeholder="After entering the suppliers name, press 'Tab' to continue" required>
             </div>
             `;
 
