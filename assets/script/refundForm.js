@@ -427,7 +427,39 @@ function refundApplication() {
     };
 
     const ancillaryRefund = () => {
+        const ancillaryReasonforRefundField = document.getElementById('ancillaryReasonforRefundSection');
+        ancillaryReasonforRefundField.innerHTML = "";
+        ancillaryReasonforRefundField.innerHTML = `
+            <div class="pt-3">
+            <label class="form-group" for="ancillaryReasonforRefund">Reason for Refund:</label>
+                <select class="form-control" id="ancillaryReasonforRefund" required>
+                    <option value="" selected disabled>Please Select</option>
+                    <option value="Client's request - Change of plans">Client's request - Change of plans</option>
+                    <option value="Incorrectly booked - Agent error">Incorrectly booked - Agent error</option>
+                    <option value="Incorrectly booked - Client error">Incorrectly booked - Client error</option>
+                    <option value="Official government travel advice">Official government travel advice</option>
+                    <option value="Supplier issue">Supplier issue</option>
+                </select>
+            </div>
+        `;
 
+        document.getElementById('ancillaryReasonforRefund').addEventListener('change', function () {
+            const ancillarySupplierField = document.getElementById('supplierAncSection');
+            ancillarySupplierField.innerHTML = "";
+            ancillarySupplierField.innerHTML = `
+            <div class="pt-3">
+                <label class="form-group" for="ancillarySupplier">Select the supplier:</label>
+                <input type="text" id="ancillarySupplier" class="form-control" placeholder="Provider's name" required>
+            </div>
+            `;
+
+            // Add a 'blur' event listener to the supplier input field
+            document.getElementById('ancillarySupplier').addEventListener('blur', function () {
+                // Call landRefundData() when the input field loses focus
+                landRefundData();
+            });
+
+        });
     };
 
     function landRefundData() {
@@ -487,7 +519,7 @@ function refundApplication() {
             </div>
             <div class="pt-3">
                 <label class="form-group" for="airNeedToKnow">Is there anything else we need to know?</label>
-                <textarea class="form-control" name="airNeedToKnow" id="airNeedToKnow" cols="80" rows="10" placeholder="Waiver codes, details of the flight which has been cancelled by the airlines for which you need a refund, or the amount you want to keep but are still giving your client something back"></textarea>
+                <textarea class="form-control" name="airNeedToKnow" id="airNeedToKnow" cols="80" rows="10" placeholder="Please provide as much information as possible."></textarea>
             </div>
             <div class="row justify-content-between pt-3">
                 <div class="col-2">
